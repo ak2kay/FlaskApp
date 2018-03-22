@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-3">Flasky App</h1>
+        <p>
+        This small web app used Python Flask framework.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="http://flask.pocoo.org/" role="button" target="_blank">
+            Learn more &raquo;
+            </a>
+            {% if session.logged_in == NULL %}
+                <a href="/register" class="btn btn-primary btn-lg">Register</a>
+                <a href="/login" class="btn btn-success btn-lg">Login</a>
+            {% endif %}
+        </p>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout.html"%}
+
+{% block body %}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">{{ article.title }}</h1>
+        <small>Written by {{ article.author}} on {{ article.create_date}}</small>
+        <p>
+        {{ article.body }}</p>
+    </div>
+</div>
+
+
+{% endblock %}
