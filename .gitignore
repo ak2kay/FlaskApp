@@ -1,2 +1,4 @@
 #忽略虚拟环境文件夹
 venv/
+.DS_Store
+__pycache__/
